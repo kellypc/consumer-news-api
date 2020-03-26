@@ -43,6 +43,12 @@ group :development, :test do
   gem 'pry'
   gem 'pry-rails'
   gem 'awesome_print'
+  gem 'rspec-rails', '~> 4.0.0'
+end
+
+group :test do
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 3.29'
 end
 
 group :development do
