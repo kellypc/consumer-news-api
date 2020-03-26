@@ -1,24 +1,39 @@
-# README
+# Consumer News Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O Consumer News Api é um projeto desenvolvido conforme o vídeo de youtube "Consumindo API com Ruby on Rails" ministrado pelo Programador Showzin.
 
-Things you may want to cover:
+O sistema consome a Api https://github.com/mathdroid/covid-19-api que traz dados sobre a contaminação do COVID-19.
 
-* Ruby version
+## Tabela de Conteúdo
 
-* System dependencies
+* [Instalação](#installation)
+* [Testes com RSpec](#testing-with-rspec)
 
-* Configuration
+## Instalação
 
-* Database creation
+1. Clone the project.
 
-* Database initialization
+	~~~ sh
+	git@github.com:kellypc/consumer-news-api.git
+	~~~
 
-* How to run the test suite
+2. Bundle the Gems.
 
-* Services (job queues, cache servers, search engines, etc.)
+	~~~ sh
+	$ bundle install
+	~~~
+3. Start the application
 
-* Deployment instructions
+	~~~ sh
+	$ rails s
+	~~~
 
-* ...
+## Testing with RSpec
+
+O projeto foi construído com TDD (Test Driven Development). Para executar os testes, basta executar os testes com o RSpec.
+
+1. Execute todos os  testes
+
+	~~~ sh
+	$ bundle exec rspec
+	~~~
